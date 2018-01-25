@@ -11,7 +11,7 @@ public class App {
 
 	public static void main(final String[] args) {
 		port(getHerokuAssignedPort());
-		get("/hello", (req, res) -> "Hello Heroku World");
+		get("/", (req, res) -> "Hello Heroku World");
 	}
 
 	static int getHerokuAssignedPort() {
