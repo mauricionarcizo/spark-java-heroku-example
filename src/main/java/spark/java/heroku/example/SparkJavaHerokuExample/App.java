@@ -16,6 +16,7 @@ public class App {
 
 	static int getHerokuAssignedPort() {
 		final ProcessBuilder processBuilder = new ProcessBuilder();
+		System.out.println(processBuilder.environment().get("PORT"));
 		if (processBuilder.environment().get("PORT") != null) {
 			return Integer.parseInt(processBuilder.environment().get("PORT"));
 		}
