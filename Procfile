@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS java -jar target/SparkJavaHerokuExample-1.0.0-jar-with-dependencies.jar --port $PORT target/*.war
+web: java $JAVA_OPTS -jar target/SparkJavaHerokuExample-1.0.0-jar-with-dependencies.jar --port $PORT target/*.war
